@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 40px 15px auto 40px;
+}
+
+.header {
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+.subheader {
+    grid-column: 1/5;
+    grid-row: 2;
+}
+
+.main {
+    display: grid;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.navigation {
+    grid-column: 1/5;
+    grid-row: 4;
+}
